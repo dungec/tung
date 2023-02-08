@@ -102,16 +102,16 @@
                 height: calc(100vh - 270px);
                 overflow: auto;
             }
-            thead{
+            .table-custom thead{
                 background-color: #F5F6FA;
                 font-size: 11px;
                 color: #A3A6B4;
                 height: 48px;
             }
-            th{
+            .table-custom th{
                 text-align: center !important;
             }
-            tr{
+            .table-custom tr{
                 border-bottom: 1px solid #ccc;
                 height: 50px;
                 color: #4D4F5C;
@@ -242,8 +242,6 @@
                             </button>
                         </div>
                     </form>
-
-
                 </div>
             </div>
             <div class="content">
@@ -251,6 +249,7 @@
                     <div class="user-info my-auto d-flex">
                         <p class="p-name my-auto">{{ $user_name }}</p>
                         <i class="fa-solid fa-angle-down my-auto"></i>
+
                     </div>
                 </nav>
                 <div class="title d-flex" style="margin-left: 40px; height: 80px;">
