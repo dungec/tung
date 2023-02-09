@@ -164,6 +164,15 @@
             .dropdown-menu[data-bs-popper]{
                 left: -130px;
             }
+            .btn-export{
+                background-color: #43425D;
+                color: #ffffff;
+                border-radius: 4px;
+            }
+            .btn-export:hover{
+                background-color: #323146;
+                color: #ffffff;
+            }
         </style>
     </head>
     <body>
@@ -266,10 +275,17 @@
                         </div>
                     </div>
                 </nav>
-                <div class="title d-flex" style="margin-left: 40px; height: 80px;">
+                <div class="title d-flex" style="margin-left: 40px; height: 80px; margin-right: 40px;">
                     <div class="col-4" style="font-size: 28px;">車両別データ一覧</div>
                     <div class="col-3"style="font-size: 20px;">車両No. ： {{ $number }}</div>
-                    <div class="col-5" style="font-size: 20px;">端末ID：{{ $id }}</div>
+                    <div class="col-5 d-flex" style="font-size: 20px;">
+                        <div style="margin-right: auto !important;">
+                            端末ID：{{ $id }}
+                        </div>
+                        <div style="margin-left: auto !important;">
+                            <button class="btn btn-export">CSVエクスポート</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="table-page">
                     <div style="height: 20px;"></div>

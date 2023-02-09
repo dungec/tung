@@ -19,5 +19,12 @@ Route::get('/', function () {
 });
 
 Route::get('home', [Controller::class, 'home']);
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::get('forgot-password', function () {
+    return view('forgot_password');
+});
 
 
